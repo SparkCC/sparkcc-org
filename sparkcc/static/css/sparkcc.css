@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Antipasto;
+    src: url('../fonts/Antipasto.ttf');
+}
+ 
+@font-face {
+    font-family: Yorkville;
+    src: url('../fonts/Yorkville.ttf');                                                                                                                                                     }
+
+body {
+  font-family: 'Antipasto', Sans-Serif;
+}
