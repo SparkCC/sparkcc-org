@@ -79,6 +79,8 @@ from __future__ import absolute_import, unicode_literals
 # INSTALLED_APPS setting.
 USE_SOUTH = True
 
+# Always just search everything
+SEARCH_MODEL_CHOICES = []
 
 ########################
 # MAIN DJANGO SETTINGS #
