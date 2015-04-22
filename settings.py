@@ -41,6 +41,11 @@ from __future__ import absolute_import, unicode_literals
 #     (2, "Left-hand tree", "pages/menus/tree.html"),
 #     (3, "Footer", "pages/menus/footer.html"),
 # )
+PAGE_MENU_TEMPLATES = (
+    (1, "Top navigation bar", "pages/menus/dropdown.html"),
+)
+
+
 
 # A sequence of fields that will be injected into Mezzanine's (or any
 # library's) models. Each item in the sequence is a four item sequence.

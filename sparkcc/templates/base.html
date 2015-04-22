@@ -83,7 +83,7 @@
 </div>
 {% endif %}
 {% endnevercache %}
-
+<!--
 <h1>{% block title %}{% endblock %}</h1>
 
 <ul class="breadcrumb">
@@ -91,12 +91,14 @@
 {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
 {% endspaceless %}
 </ul>
+-->
 
 </div>
 
 <div class="container">
 <div class="row">
 
+<!--
 <div class="col-md-2 left">
     {% block left_panel %}
     <div class="panel panel-default tree">{% page_menu "pages/menus/tree.html" %}</div>
@@ -104,6 +106,9 @@
 </div>
 
 <div class="col-md-7 middle">
+-->
+<div class="col-md-1 left"></div>
+<div class="col-md-8 middle">
     {% block main %}{% endblock %}
 </div>
 
@@ -127,7 +132,7 @@
 
 <footer>
 <div class="container">
-{% page_menu "pages/menus/footer.html" %}
+<!--{% page_menu "pages/menus/footer.html" %}-->
 
 <div class="row">
 <p class="site-info text-center">
