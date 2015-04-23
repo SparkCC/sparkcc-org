@@ -87,6 +87,9 @@ USE_SOUTH = True
 # Always just search everything
 SEARCH_MODEL_CHOICES = []
 
+# Blog is homepage so set slug to root
+BLOG_SLUG = ""
+
 ########################
 # MAIN DJANGO SETTINGS #
 ########################
