@@ -117,18 +117,24 @@
 </div>
 
 <div class="col-md-3 right">
-    {% nevercache %}
-    {% include "includes/user_panel.html" %}
-    {% endnevercache %}
-    <div class="panel panel-default">
+  {% nevercache %}
+  {% include "includes/user_panel.html" %}
+  {% endnevercache %}
+  {% include "includes/social.html" %}
+  <div class="panel panel-default">
     <div class="panel-body">
-    {% block right_panel %}
-    {% ifinstalled mezzanine.twitter %}
+    {% include "includes/subscribe.html" %}
+    </div>
+  </div>
+  {% ifinstalled mezzanine.twitter %}
+  <div class="panel panel-default">
+    <div class="panel-body">
     {% include "twitter/tweets.html" %}
     {% endifinstalled %}
-    {% endblock %}
     </div>
-    </div>
+  </div>
+  {% block right_panel %}
+  {% endblock %}
 </div>
 
 </div>

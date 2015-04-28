@@ -51,3 +51,10 @@ a {
 a:hover, a:focus {
   color: #e09b15;
 }
+
+/* Social icons*/
+#social-icons h3 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
