@@ -133,7 +133,12 @@
     </div>
   </div>
   {% endifinstalled %}
-  {% block right_panel %}
+  <div class="panel panel-default">
+    <div class="panel-body">
+    {% include "includes/twitter.html" %}
+    </div>
+  </div>
+{% block right_panel %}
   {% endblock %}
 </div>
 
