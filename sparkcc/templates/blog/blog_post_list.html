@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags %}
+{% load i18n mezzanine_tags blog_tags keyword_tags disqus_tags %}
 {% load sccfilters %}
 
 {% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Blog" %}{% endif %}{% endblock %}
@@ -124,6 +124,7 @@
     {% for tag in tags %}
     <li><a href="{% url "blog_post_list_tag" tag.slug %}" class="tag">{{ tag }}</a></li>
     {% endfor %}
+
     {% endspaceless %}
     </ul>
     {% endif %}
