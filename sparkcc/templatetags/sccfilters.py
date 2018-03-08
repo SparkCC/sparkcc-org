@@ -25,7 +25,7 @@ def get_header(value):
 
     for each in more_tags:
         more_split = value.split(each)
-        if more_split > 1:
+        if len(more_split) > 1:
             return more_split[0]
 
     ends = [
@@ -38,7 +38,7 @@ def get_header(value):
 
     for each in ends:
         end_split = value.split(each)
-        if end_split > 1:
+        if len(end_split) > 1:
             return end_split[0] + each
 
     return value

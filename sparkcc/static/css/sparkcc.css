@@ -62,3 +62,7 @@ a:hover, a:focus {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+
+.middle img {
+    height: auto;
+}
